@@ -1,3 +1,4 @@
+<!-- <%@page contentType="text/html; charset=utf-8" %> -->
 <!DOCTYPE html>
 
 <html lang="en">
@@ -53,7 +54,7 @@
                                 <c:forEach items="${articles}" var="article">
                                 <tr>
                                     <td>${article.article_no}</td>
-                                    <td><a href="/article/read?article_no=${article.article_no}">${article.title}</a></td>
+                                    <td><a href="${path}/article/read?article_no=${article.article_no}">${article.title}</a></td>
                                     <td>${article.writer}</td>
                                     <td><fmt:formatDate value="${article.regDate}" pattern="yyyy-MM-dd a HH:mm"/></td>
                                     <td><span class="badge bg-red">${article.viewCnt}</span></td>
