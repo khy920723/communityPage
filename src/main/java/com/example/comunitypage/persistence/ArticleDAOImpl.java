@@ -3,6 +3,7 @@ package com.example.comunitypage.persistence;
 import com.example.comunitypage.domain.ArticleVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.inject.Inject;
@@ -11,7 +12,9 @@ import java.util.List;
 @Repository
 public class ArticleDAOImpl implements ArticleDAO {
 
-    private static final String NAMESPACE = "com.example.comunitypage.mappers.article.ArticleMapper";
+    private static final String NAMESPACE = "com.example.comunitypage.persistence.ArticleDAO";
+
+    @Autowired
     private final SqlSession sqlSession;
 
     //    @Autoweired?

@@ -10,7 +10,8 @@
     <!-- Root Context: defines shared resources visible to all other web components -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/>
-        <property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/tb_article?serverTimezone=UTC&amp;useSSL=false"/>
+        <property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/tb_article?serverTimezone=UTC&amp;allowPublicKeyRetrieval=true&amp;useSSL=false"/>
+<!--        jdbc:mysql://localhost:3306/tb_article?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false-->
         <property name="username" value="root" />
         <property name="password" value="123456" />
     </bean>
