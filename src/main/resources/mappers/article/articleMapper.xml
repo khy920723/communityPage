@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.comunitypage.mappers.article.articleMapper">
+<mapper namespace="com.example.comunitypage.mappers.article.ArticleMapper">
 
     <insert id="create">
         INSERT INTO tb_article (
@@ -46,7 +46,7 @@
             , content
             , writer
             , regdate
-            , viewcont
+            , viewcnt
         FROM tb_article
         WHERE article_no > 0
         ORDER BY article_no DESC, regdate DESC

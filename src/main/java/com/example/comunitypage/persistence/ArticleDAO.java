@@ -1,6 +1,8 @@
 package com.example.comunitypage.persistence;
 
 import com.example.comunitypage.domain.ArticleVO;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

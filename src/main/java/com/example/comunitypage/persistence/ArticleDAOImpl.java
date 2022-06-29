@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public class ArticleDAOImpl implements ArticleDAO {
 
-    private static final String NAMESPACE = "com.example.comunitypage.mappers.article.articleMapper";
+    private static final String NAMESPACE = "com.example.comunitypage.mappers.article.ArticleMapper";
     private final SqlSession sqlSession;
 
     //    @Autoweired?
